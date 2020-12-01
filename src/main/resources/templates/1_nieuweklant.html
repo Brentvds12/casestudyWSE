@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--Brent Van de Staey r0793295-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Nieuwe klant</title>
+</head>
+<body>
+
+<form action="/welkom" method="post">
+    <p>
+        <label for="naam">Voornaam </label>
+        <input type="text" id="naam" size="15" name="naam" placeholder="naam">
+    </p>
+    <p>
+        <label for="familienaam">Familienaam </label>
+        <input type="text" id="familienaam" size="15" name="familienaam" placeholder="familienaam">
+    </p>
+    <p>
+        <label for="geboortejaar">Geboortejaar </label>
+        <input type="text" id="geboortejaar" size="15" maxlength="4" name="geboortejaar" placeholder="geboortejaar">
+    </p>
+    <p>
+        <input type="submit" name="registreer" value="Ga door als klant zonder aanmaak klantenkaartnr">
+    </p>
+</form>
+
+<p><a href="/">Terug naar de startpagina</a></p>
+
+</body>
+</html>

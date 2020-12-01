@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--Brent Van de Staey r0793295-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Nieuw Personeelslid</title>
+</head>
+<body>
+
+<form action="/welkompersoneelslid" method="post">
+    <p>
+        <label for="naam">Voornaam </label>
+        <input type="text" id="naam" size="15" name="naam" placeholder="naam">
+    </p>
+    <p>
+        <label for="familienaam">Familienaam </label>
+        <input type="text" id="familienaam" size="15" name="familienaam" placeholder="familienaam">
+    </p>
+    <p>
+        <label for="dienst">In dienst sinds (dd/MM/yyyy) </label>
+        <input type="text" id="dienst" size="10" maxlength="10" name="dienst" placeholder="dd/MM/yyyy">
+    </p>
+    <p>
+        <input type="submit" name="registreer" value="Registreer personeelslid">
+    </p>
+</form>
+
+<p><a href="/">Terug naar de startpagina</a></p>
+
+</body>
+</html>
