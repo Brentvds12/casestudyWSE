@@ -47,26 +47,6 @@ public class SupermarktTests {
         assertArrayEquals(lijst, aldi.getAfdelingen().toArray());
     }
 
-
-
-    /**
-     * Test of constructor en getters
-     */
-    @Test
-    public void testZoekAfdelingOpNaam() {
-        Supermarkt lidl = new Supermarkt("Lidl");
-        assertEquals(0, lidl.getAantalAfdelingen());
-        Afdeling groenten = new Afdeling("groenten");
-        lidl.voegAfdelingToe(groenten);
-        assertEquals(1, lidl.getAantalAfdelingen());
-        Afdeling fruit = new Afdeling("fruit");
-        lidl.voegAfdelingToe(fruit);
-        assertEquals(2, lidl.getAantalAfdelingen());
-        assertNotNull(lidl.zoekAfdelingOpNaam("fruit"));
-        assertEquals(fruit.getNaam(), lidl.zoekAfdelingOpNaam("fruit").getNaam());
-        assertNull(lidl.zoekAfdelingOpNaam("blabla"));
-    }
-
     /**
      * before a Klant can make his reservations, he has to register to the
      * Supermarkt as result of this registration he will receive a klantenkaartnr

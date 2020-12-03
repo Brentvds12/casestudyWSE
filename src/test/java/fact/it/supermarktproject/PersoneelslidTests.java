@@ -29,7 +29,7 @@ public class PersoneelslidTests {
     @Test
     public void testToString() {
         Personeelslid donald = new Personeelslid("Donald", "Duck");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd MMM yyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         assertEquals("Personeelslid DUCK Donald is in dienst sinds " + LocalDate.now().format(dtf) , donald.toString());
     }
 
@@ -40,7 +40,7 @@ public class PersoneelslidTests {
     public void testToString2() {
         Personeelslid donald = new Personeelslid("Donald", "Duck");
         donald.setInDienstSinds(LocalDate.of(1999,2,25));
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd MMM yyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         assertEquals("Personeelslid DUCK Donald is in dienst sinds " + donald.getInDienstSinds().format(dtf) , donald.toString());
     }
 
