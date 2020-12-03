@@ -1,13 +1,16 @@
 package fact.it.supermarktproject.controller;
 //Brent Van de Staey r0793295
+import fact.it.supermarktproject.model.Afdeling;
 import fact.it.supermarktproject.model.Klant;
 import fact.it.supermarktproject.model.Personeelslid;
+import fact.it.supermarktproject.model.Supermarkt;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.ui.Model;
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 @Controller
 public class MainController {
@@ -73,7 +76,6 @@ public class MainController {
 
     /*Deze methodes heb je pas nodig in deel 2*/
     private ArrayList<Personeelslid> vulPersoneelsledenLijst() {
-        ArrayList<Personeelslid> personeelsleden = new ArrayList<>();
         ArrayList<Personeelslid> personeelsleden = new ArrayList<>();
         Personeelslid jitse = new Personeelslid("Jitse", "Verhaegen");
         Personeelslid bert = new Personeelslid("Bert", "De Meulenaere");
